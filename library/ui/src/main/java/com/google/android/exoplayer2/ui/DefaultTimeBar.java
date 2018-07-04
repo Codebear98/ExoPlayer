@@ -502,7 +502,7 @@ public class DefaultTimeBar extends View implements TimeBar {
   }
 
   private boolean isInSeekBar(float x, float y) {
-    return seekBounds.contains((int) x, (int) y);
+    return seekBounds.contains((int) x, 0); //ignore y
   }
 
   private void drawTimeBar(Canvas canvas) {
