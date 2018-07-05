@@ -18,7 +18,7 @@ if (gradle.ext.has('exoplayerModulePrefix')) {
     modulePrefix += gradle.ext.exoplayerModulePrefix
 }
 
-include modulePrefix + 'playbacktests'
-project(modulePrefix + 'playbacktests').projectDir = new File(rootDir, 'playbacktests')
+//include modulePrefix + 'playbacktests'
+//project(modulePrefix + 'playbacktests').projectDir = new File(rootDir, 'playbacktests')
 
 apply from: 'core_settings.gradle'
